@@ -1,9 +1,10 @@
 NAME=cairo
 VERSION=1.16.0
-REVISION=1
+REVISION=2
 LICENSE=LGPL-2.1+
 SRC=https://www.cairographics.org/releases/cairo-1.16.0.tar.xz
 SRCMD5=f19e0353828269c22bd72e271243a552
-BUILDDEPS=libpng pixman fontconfig glib2 libdrm
-INSTALLDEPS=libpng pixman fontconfig glib2 libdrm
+BUILDDEPS=libpng pixman fontconfig glib2 libdrm gles:mesa
+INSTALLDEPS=libpng pixman fontconfig glib2 libdrm gles:mesa
 OPTIONS=(gles)
+DEFAULTS=
